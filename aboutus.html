@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Milktea Shop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: #E8F5E0; /* Light green background */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ========== WHITE NAVIGATION BAR ========== */
+        .navbar {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 12px 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: #442A16; /* Brown text */
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 22px;
+            padding: 8px 12px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== MAIN CONTAINER ========== */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* ========== CARD STYLES ========== */
+        .card {
+            background: #FFFFFF;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            color: #442A16;
+            margin-bottom: 25px;
+        }
+
+        .card-full {
+            text-align: center;
+        }
+
+        .cards-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #D4B996; /* Gold divider line */
+            letter-spacing: 0.5px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #5A3E2B;
+        }
+
+        /* ========== WHAT WE STAND FOR — FEATURE BOXES ========== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 20px;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            background-color: #FFF9E3; /* Pale cream */
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 15px;
+            color: #5A3E2B;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 700px) {
+            .cards-row, .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== WHITE NAVIGATION BAR ========== -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="nah.html">Gallery</a>
+        <a href="contacts.html">Contact</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="container">
+
+        <!-- OUR STORY -->
+        <div class="card card-full">
+            <h2>📖 Our Story</h2>
+            <p>Welcome to our Milktea Shop! Born and brewed in Bacoor, Cavite. We started with a simple passion - to serve the freshest, most delicious milktea that warms your heart and brightens your day. From our humble beginnings, we've grown with one goal: to bring joy in every sip!</p>
+        </div>
+
+        <!-- MISSION & VISION -->
+        <div class="cards-row">
+            <div class="card">
+                <h2>🎯 Our Mission</h2>
+                <p>To serve high-quality, affordable, and refreshing milktea made with premium ingredients - bringing happiness and smiles to our community, one cup at a time!</p>
+            </div>
+            <div class="card">
+                <h2>✨ Our Vision</h2>
+                <p>To be everyone's favorite local milktea shop — known for great taste, friendly service, and quality you can trust.</p>
+            </div> 
+        </div>
+        
+        
+        <!-- WHAT WE STAND FOR -->
+        <div class="card card-full">
+            <h2>💛 What We Stand For</h2>
+            <div class="features-grid">
+                <div class="feature-box">🍵 Fresh & Premium Tea</div>
+                <div class="feature-box">🍫 Quality Ingredients</div>
+                <div class="feature-box">🤝 Friendly Service</div>
+                <div class="feature-box">❤️ Made with Love</div>
+            </div>
+        </div>
+        
+
+        <!-- WHY CHOOSE US -->
+        <div class="card card-full">
+            <h2>🌟 Why Choose Us?</h2>
+            <p>We don't just serve milktea - we craft happiness in a cup. Every drink is handcrafted, carefully prepared, and made fresh just for you. Whether it's classic taro, rich chocolate, or creamy matcha - there's always something special waiting for you here!</p>
+        </div>
+
+    </div>
+
+    <!-- OPEN HOURS -->
+        <div class="card card-full">
+            <h2> OPENING DAY</h2>
+            <div class="features-grid">
+                <div class="feature-box"> MONDAY 9AM-10PM</div>
+                <div class="feature-box"> TUESDAY 9AM-10PM</div>
+                <div class="feature-box"> WENESDAY 9A-10PM</div>
+                <div class="feature-box"> THURDDAY 9A-10PM</div>
+                <div class="feature-box"> FRIDAY 9A-10PM</div>
+                <div class="feature-box"> SATURDAY 9A-10PM</div>
+            </div>
+        </div>
+
+</body>
+</html>

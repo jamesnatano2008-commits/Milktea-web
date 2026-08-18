@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Milktea Shop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: #442A16; /* Dark brown background */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ========== WHITE NAVIGATION BAR ========== */
+        .navbar {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 12px 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: #442A16;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 22px;
+            padding: 8px 12px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== PAGE HEADER ========== */
+        .page-header {
+            background-color: #0A1A47; /* Dark navy blue */
+            color: #FFFFFF;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        /* ========== PRODUCTS GRID ========== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* ========== PRODUCT CARD — ONLY IMAGE + NAME ========== */
+        .product-card {
+            background-color: #0A1A47;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 17px;
+            color: #FFFFFF;
+            line-height: 1.5;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 900px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 550px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-header { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== WHITE NAVIGATION BAR ========== -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="contacts.html">Contact</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        🥤 Milktea Favorites Menu
+    </div>
+
+    <!-- PRODUCTS — ONLY PICTURE + NAME -->
+    <div class="products-grid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+            <img src="images/1.jpg"  class="product-img">
+            <h3 class="product-name">Freshly made with love every drink prepared carefully just for you</h3>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+            <img src="images/images2.jpg"  class="product-img">
+            <h3 class="product-name">Meet our friendly team  always happy to serve you with a smile!</h3>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+            <img src="images/image3.jpg"  class="product-img">
+            <h3 class="product-name">Handcrafted step-by-step  making your milktea perfect, one sip at a time!</h3>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+            <img src="images/images4.jpg"  class="product-img">
+            <h3 class="product-name"> Our kitchen  clean, organized, and ready to brew your favorites!</h3>
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+            <img src="images/images5.jpg"  class="product-img">
+            <h3 class="product-name">Proudly serving happiness in every cup! </h3>
+        </div>
+
+        <!-- PRODUCT 6 -->
+        <div class="product-card">
+            <img src="images/images6.jpg"  class="product-img">
+            <h3 class="product-name"> Welcome to our shop  where great taste meets warm vibes!</h3>
+        </div> 
+
+
+        <!-- PRODUCT 7 -->
+        <div class="product-card">
+            <img src="images/images7.jpg"  class="product-img">
+            <h3 class="product-name"> Only the freshest and finest ingredients go into every drink!</h3>
+        </div>
+
+
+        <!-- PRODUCT 8 -->
+        <div class="product-card">
+            <img src="images/images8.jpg"  class="product-img">
+            <h3 class="product-name"> Care, passion, and quality in every single cup!</h3>
+        </div>
+
+        <!-- PRODUCT 9 -->
+        <div class="product-card">
+            <img src="images/images.jpg" alt="Oreo Chocolate Milk Tea" class="product-img">
+            <h3 class="product-name">Oreo Chocolate Milk Tea</h3>
+        </div>
+
+
+
+        
+    </div>
+    <style>
+        body {
+            background-color: #3B240B;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .video-section {
+            background-color: #0B1742;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 800px;
+            object-fit: cover; /* Keep image nice & cropped evenly */
+            margin: 30px auto;
+
+        }
+        .video-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+
+
+    <div class="video-section">
+        <h2>🎥 Watch Our Video</h2>
+
+        <!-- 👇 Ito ang PINAKAMAHALAGANG BAHAGI -->
+        <video src="video/Download.mp4"  controls width="420" height="420">
+                    </video>
+    </div>
+
+</body>
+</html>
+
